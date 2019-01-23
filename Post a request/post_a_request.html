@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Post a request</title>
+  <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css"> 
+	
+	<script src="js/total_price.js"></script>
+  
+</head>
+
+<body onLoad="disable()">
+  <div class="form">
+      
+        <div id="post_request">   
+          <h1>Post a request</h1>
+          
+          <form action="/" method="post">
+
+          <div class="field-wrap">
+            
+            <input type="text"required autocomplete="off" placeholder="Name of the item"/>
+          </div>
+          
+          <div class="field-wrap">
+            
+            <input type="text"required autocomplete="off" placeholder="Link"/>
+          </div>
+          
+          <div class="field-wrap">
+            
+            <input type="number" id="quantity" required autocomplete="off" placeholder="Quantity" onChange="disable()" onkeypress="disable()" onChange="totalPrice()" onkeyup="disable()" onkeypress="totalPrice()" onkeyup="totalPrice()"/>
+          </div>
+          
+          <div class="top-row" id="priceSection">
+            <div class="field-wrap">
+              
+             <input type="number" id="price" required autocomplete="off" placeholder="Price" onChange="totalPrice()" onkeypress="totalPrice()" onkeyup="totalPrice()"/>
+             
+            </div>
+        
+            <div class="field-wrap">
+              <h2 id="total_price">Total Price: </h2>
+               
+            </div>
+            
+          </div>
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              
+              <input type="text" required autocomplete="off" placeholder="Your location"/>
+            </div>
+        
+            <div class="field-wrap">
+              
+              <input type="text"required autocomplete="off" placeholder="Item's location"/>
+            </div>
+          </div>
+          
+          <div class="field-wrap">
+            
+            <input type="number"required autocomplete="off" placeholder="Monetary reward for the traveller in dollars"/>
+          </div>
+          
+       
+          <button type="submit" class="button button-block"/>Post request</button>
+          
+          </form>
+
+        </div>
+      
+</div> 
+  
+</body>
+</html>
