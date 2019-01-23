@@ -1,0 +1,553 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>COMMRAVEL</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+			<link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+
+		</noscript>
+	</head>
+	
+	<body id="top">
+	<div id="id01" class="modal">
+
+	
+	<div class="form modal-content animate" style="z-index: 1">
+      
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Sign Up for Free</h1>
+          
+          
+               <div>
+               <p style="color:white; font-size: 20px">All fields are required *</p>
+			  </div>
+          
+          <form id="register" action="/" method="post">
+         
+          <div class="top-row">
+           
+            <div class="field-wrap">
+              <input style="color:white" type="text" name="fName" minlength="3" maxlength="20" pattern="[A-Za-z]{1,32}" placeholder="First Name" autocomplete="off" autofocus required/>
+            </div>
+        
+            <div class="field-wrap">
+		  <input style="color:white" type="text" name="lName" minlength="3" maxlength="20" placeholder="Last Name" autocomplete="off" required/>
+            </div>
+          </div>
+
+         
+           <div class="field-wrap"> 
+            <input style="color:white" type="text" name="uName" pattern="[a-zA-Z]{1,20}" minlength="4" maxlength="20" placeholder="Username" autocomplete="off" required/>
+          </div>	
+          
+          
+          <div class="field-wrap">
+           
+            <input style="color:white" type="email" placeholder="Email" name="email" autocomplete="off" required/>
+          </div>
+          
+          
+          <div class="field-wrap">
+     
+            <input style="color:white" type="password" id="password" minlength="5" maxlength="20" name="password" placeholder="Password" autocomplete="off" required/>
+          </div>
+          
+           <div class="field-wrap">
+       
+            <input style="color:white" type="password" name="password2" minlength="5" maxlength="20" placeholder="Confirm Password" autocomplete="off" required/>
+          </div>
+          
+          <input type="submit" style="  border: 0;
+  outline: none;
+  border-radius: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #629DD1;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none; 
+  height:85px;
+  display: block;
+  width: 100%;" value="Get Started"/>
+          
+           <br>
+           
+          
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap"> 
+            <input style="color:white" type="email" placeholder="Email" required autocomplete="off" autofocus/>
+          </div>
+          
+          <div class="field-wrap">
+   
+            <input style="color:white" type="password" placeholder="Password" required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <button style="border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #629DD1;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none; display: block;
+  width: 100%;"/>Log In</button>
+           
+          <br>
+          
+          </form>
+
+        </div>
+        
+      </div>
+      
+</div> 	
+			
+		</div>	
+			
+			
+			<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+			
+			
+			<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+       <script src="sign-up-login-form/js/validation.js"></script>    
+              <script src="sign-up-login-form/js/index.js"></script>    
+
+<a href ="#" class ="scrollToTop">
+</a> 
+ 
+
+<script>
+ 
+$(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+});
+</script>
+
+
+
+	
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="#">COMMRAVEL</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Posted Trips/posted_trips.html">Find trips</a></li>
+						<li><a href="Posted Requests/posted_requests.html">Find requests</a></li>
+						<li><a href="Post a trip/post_a_trip.html">Post a trip</a></li>
+						<li><a href="Post a request/post_a_request.html">Post a request</a></li>
+						<li><a class="contactScroll" href="javascript:document.getElementById('contName').focus()">Contact</a></li>
+						<li><button class="button special" onclick="document.getElementById('id01').style.display='block'">Login / Sign Up</a></li>
+					</ul>
+				</nav>
+			</header>
+
+	
+<script>
+ 
+$(document).ready(function(){	
+	//Click event to scroll to top
+	$('.contactScroll').click(function(){
+		$('html, body').animate({scrollTop : 2700},900);
+		return false;
+	});
+	
+});
+</script>
+		
+		
+			
+								
+				<div class="slideshow-container">
+<div class="mySlides fade" style="background-image:url(images/banner.jpg);width:100%; height:30%; background-size: cover;
+		background-position: center center; 
+">
+   					<h2 style="font-size: 360%;
+			line-height: 1em;
+			margin: 0 0 0.5em 0;
+			padding:3em 0 0 0; color:white">Serve while you traverse</h2>
+					<p style="font-size: 140%;
+			margin-bottom: 2em;">Let the travellers deliver you anything you desire from anywhere around the globe</p>
+					<ul style="color: white" class="actions">					
+						<li style="color: white"><a style="color: white !important;
+" href="#elements" class="button big alt">Learn More</a></li>
+					</ul>
+</div>
+
+<div class="mySlides fade" style="background-image:url(images/2.jpg);width:100%; height:30%; background-size: cover;
+		background-position: center center;
+">
+    					<h2 style="font-size: 360%;
+			line-height: 1em;
+			margin: 0 0 0.5em 0;
+			;padding:3em 0 0 0; color:white">Serve while you traverse</h2>
+					<p style="font-size: 140%;
+			margin-bottom: 2em; color:white">Let the travellers deliver you anything you desire from anywhere around the globe</p>
+					<ul style="color: white" class="actions">			
+						<li style="color: white"><a style="color: white !important;
+" href="#elements" class="button big alt">Learn More</a></li>
+					</ul>
+</div>
+
+<div class="mySlides fade" style="background-image:url(images/3.jpg);width:100%;  height:30%; 		background-size: cover;
+		background-position: center center;
+">
+    					<h2 style="font-size: 360%;
+			line-height: 1em;
+			margin: 0 0 0.5em 0;
+			padding:3em 0 0 0; color:white">Serve while you traverse</h2>
+					<p style="font-size: 140%;
+			margin-bottom: 2em;">Let the travellers deliver you anything you desire from anywhere around the globe</p>
+					<ul style="color: white" class="actions">			
+						<li><a style="color: white !important;
+" href="#elements" class="button big alt">Learn More</a></li>
+					</ul>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center; display:block">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+ 	slides[i].style.display="none";
+	}
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>	
+		
+	
+			
+			<section id="three" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="8u">
+							
+							<section>
+								<h2>How it works</h2>
+								
+								<iframe width="100%" height="430" src="https://www.youtube.com/embed/1wkPMUZ9vX4?ecver=1" frameborder="0" allowfullscreen></iframe>
+								
+							</section>
+						
+						</div>
+						
+						<div class="4u">
+							<section>
+								<h3>Our Mission</h3>
+								<p style="font-size: 1.2em">Commravel is all about giving people the freedom to purchase and exchange anything from anywhere around the world and allowing them to spend their hard-earned money on things that matter the most.</p>
+							</section>
+							
+							
+						</div>
+					</div>
+				</div>
+			</section>			
+
+		
+			
+		
+			<section id="two" class="wrapper style2">
+				
+				<header class="major">
+					<h2>Be a traveller and...</h2>
+					
+				</header>
+				<div class="container">
+					<div class="row">
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa-money major"></i>
+								
+								<p>Earn extra cash while you travel around the globe.</p>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa-gift major"></i>
+								
+								<p>Get among the top travellers of the month and receive amazing discounts and offers in various restaurants around the world.</p>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa-users major"></i>
+								
+								<p>Meet new people and experience new cultures. Expand both your network and your mind.</p>
+							</section>
+						</div>
+					</div>
+					
+				</div>
+				<header class="major">
+					<h2>Be a requester and...</h2>
+					
+				</header>
+				<div class="container">
+					<div class="row">
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa-heart major"></i>
+								
+								<p>Surprise your loved ones by sending them cool and useful stuff.</p>
+							</section>
+						</div>
+						<div class="4u">
+							
+							<section class="special box">
+								<i class="icon fa-shopping-cart major"></i>
+								
+								<p>Shop from anywhere around the world and finally get a chance to avail those amazing deals and offers.</p>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa-clock-o major"></i>
+								
+								<p>Save that enormous delivery time and pay absolutely NO shipping fees.</p>
+							</section>
+						</div>
+					</div>
+					
+				</div>
+				
+				
+			</section>
+
+		
+			<section id="one" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="6u">
+							<section class="special">
+								<h2>Recently posted trips</h2>
+								<div class="image fit">
+								
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>From</th>
+      <th>To</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Nabeel</strong></td>
+      <td>USA</td>
+      <td>Pakistan</td>
+    </tr>
+  </tbody>
+</table>
+								
+								</div>
+								
+								
+								
+								<ul class="actions">
+									<li><a href="Posted Trips/posted_trips.html" class="button alt">View all</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="6u">
+							<section class="special">
+								<h2>Recently posted requests</h2>
+								<div class="image fit">
+								<table>
+  <thead>
+    <tr>
+      <th>From</th>
+      <th>To</th>
+      <th>Product</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>USA</strong></td>
+      <td>Pakistan</td>
+      <td>Laptop</td>
+    </tr>
+  </tbody>
+</table>	
+									
+								</div>
+								
+								
+								
+								<ul class="actions">
+									<li><a href="Posted Requests/posted_requests.html" class="button alt">View all</a></li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				</div>
+			
+			</section>
+			
+			
+		
+			<footer id="footer">
+			    <header class="major">
+					<h2 id="contact">Contact us</h2>
+				</header>	
+				
+				<div class="container">
+				  
+					<div class="row double">
+						<div class="6u">
+							
+								<form id="formName" name="formName">
+									<input id="contName" type="text" name="name" placeholder="Name"/><br>
+									<input type="email" name="email" placeholder="Email"/><br>
+									<textarea style="		-moz-appearance: none;
+		-webkit-appearance: none;
+		-o-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		background: rgba(144, 144, 144, 0.075);
+		border-radius: 6px;
+		border: none;
+		border: solid 1px rgba(144, 144, 144, 0.25);
+		color: inherit;
+		display: block;
+		outline: 0;
+		padding: 0 1em;
+		text-decoration: none;
+		width: 100%;" name="mess" rows="5" placeholder="Message"></textarea><br>
+									<button type="submit" class="button special">Submit</button>
+									
+								</form>
+							
+							
+						</div>
+						<div class="6u">
+			
+						 <!--GOOGLE MAP--><div id="map"></div>
+
+							<br>
+							<ul class="icons">
+								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+							</ul>
+						</div>
+					
+					</div>
+					
+					<ul class="copyright">
+						<li>Registered. All rights reserved.</li>
+						
+					</ul>
+				
+				</div>
+			
+			</footer>
+   
+   
+   
+   <!--GOOGLE MAP JAVASCRIPT-->
+    <script>
+      function initMap() {
+		var uluru = {lat: 33.6425, lng: 72.9905};   
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoCRHeZirzu4NVgQJJ54HAKunTSVof62A&callback=initMap">
+    </script>
+
+
+
+	</body>
+</html>
